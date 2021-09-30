@@ -51,11 +51,19 @@ export default {
       required: true,
     },
   },
+  // watch: {
+  //   "route.param.id": {
+  //     handler() {
+  //       this.product(this.$route.params.id);
+  //     },
+  //   },
+  // },
   computed: {
     // fethcing the images of the products
     imagePath() {
       return this.product.image;
     },
+
     // calculating discount before displaying it
     discount() {
       return Math.trunc(
@@ -65,9 +73,6 @@ export default {
       );
     },
     size() {
-      // eslint-disable-next-line vue/no-side-effects-in-computed-properties
-      // return this.product.size.split();
-      // return JSON.stringify(this.product.size);
       // eslint-disable-next-line vue/no-side-effects-in-computed-properties
       return (this.productSize = JSON.parse(
         this.product.size.replace(/\]\s*,\s*\[/g, ", ")

@@ -56,45 +56,42 @@ export default {
   },
 
   methods: {
-    applyFilter(filter, option) {
-      if (filter.filter_lable === "Colour") {
-        // filtering the products by Colours
-        console.log("Hello, I'm a Colours");
-
-        return (
-          "https://pim.wforwoman.com/pim/pimresponse.php/?service=category&store=1&url_key=top-wear-kurtas&page=1&count=20&sort_by=&sort_dir=desc&filter=" +
-          "color-" +
-          option.value
-        );
-        // async fetchProducts() {
-        //   const baseURL =
-        //     "https://pim.wforwoman.com/pim/pimresponse.php/?service=category&store=1&url_key=top-wear-kurtas&page=1&count=20&sort_by=&sort_dir=desc&filter=";
-        //   const response = await this.$http.get(baseURL);
-        //   this.allProducts = response.data.result.products;
-        //   console.log(this.allProducts);
-        // },
-      }
-      if (filter.filter_lable === "Price") {
-        // filtering the products by Price
-        console.log("Hello, I'm a Price");
-
-        return (
-          "https://pim.wforwoman.com/pim/pimresponse.php/?service=category&store=1&url_key=top-wear-kurtas&page=1&count=20&sort_by=&sort_dir=desc&filter=" +
-          "selling_price-" +
-          option.value
-        );
-      }
-      if (filter.filter_lable === "Discount") {
-        // filtering the products by Discount
-        console.log("Hello, I'm a Discount");
-
-        return (
-          "https://pim.wforwoman.com/pim/pimresponse.php/?service=category&store=1&url_key=top-wear-kurtas&page=1&count=20&sort_by=&sort_dir=desc&filter=" +
-          "discount-" +
-          option.values
-        );
-      }
-    },
+    //   applyFilter(filter, option) {
+    //     if (filter.filter_lable === "Colour") {
+    //       // filtering the products by Colours
+    //       console.log("Hello, I'm a Colours");
+    //       const colorFilteredProducts =
+    //         "https://pim.wforwoman.com/pim/pimresponse.php/?service=category&store=1&url_key=top-wear-kurtas&page=1&count=20&sort_by=&sort_dir=desc&filter=" +
+    //         "color-" +
+    //         option.value;
+    //       // async fetchProducts() {
+    //       //   const baseURL =
+    //       //     "https://pim.wforwoman.com/pim/pimresponse.php/?service=category&store=1&url_key=top-wear-kurtas&page=1&count=20&sort_by=&sort_dir=desc&filter=";
+    //       //   const response = await this.$http.get(baseURL);
+    //       //   this.allProducts = response.data.result.products;
+    //       //   console.log(this.allProducts);
+    //       // },
+    //     }
+    //     if (filter.filter_lable === "Price") {
+    //       // filtering the products by Price
+    //       console.log("Hello, I'm a Price");
+    //       return (
+    //         "https://pim.wforwoman.com/pim/pimresponse.php/?service=category&store=1&url_key=top-wear-kurtas&page=1&count=20&sort_by=&sort_dir=desc&filter=" +
+    //         "selling_price-" +
+    //         option.value
+    //       );
+    //     }
+    //     if (filter.filter_lable === "Discount") {
+    //       // filtering the products by Discount
+    //       console.log("Hello, I'm a Discount");
+    //       return (
+    //         "https://pim.wforwoman.com/pim/pimresponse.php/?service=category&store=1&url_key=top-wear-kurtas&page=1&count=20&sort_by=&sort_dir=desc&filter=" +
+    //         "discount-" +
+    //         option.values
+    //       );
+    //     }
+    //   },
+    // },
   },
 };
 </script>
