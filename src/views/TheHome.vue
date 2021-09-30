@@ -144,7 +144,7 @@ export default {
       console.log("These are fiters", this.filters);
     },
 
-    // Applying filters depending upon what filter is being chosen
+    // Applying filters depending upon what filter is been chosen
     applyFilter(filter, option) {
       console.log("Filter wala hai ye", `color-${option.value}`);
 
@@ -180,6 +180,22 @@ export default {
           this.selectedFilters === ""
             ? `size-${option.value}`
             : `${this.selectedFilters},size-${option.value}`;
+      }
+      if (filter.filter_lable === "Neck Type") {
+        // filtering products by Neck Type
+        console.log("Hello, I'm a Neck Type");
+        this.selectedFilters =
+          this.selectedFilters === ""
+            ? `neck-${option.value}`
+            : `${this.selectedFilters},neck-${option.value}`;
+      }
+      if (filter.filter_lable === "Sleeve") {
+        // filtering products by Sleeve
+        console.log("Hello, I'm a Sleeve");
+        this.selectedFilters =
+          this.selectedFilters === ""
+            ? `sleeve-${option.value}`
+            : `${this.selectedFilters},sleeve-${option.value}`;
       }
     },
   },
