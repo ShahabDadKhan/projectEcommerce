@@ -51,13 +51,7 @@ export default {
       required: true,
     },
   },
-  // watch: {
-  //   "route.param.id": {
-  //     handler() {
-  //       this.product(this.$route.params.id);
-  //     },
-  //   },
-  // },
+
   computed: {
     // fethcing the images of the products
     imagePath() {
